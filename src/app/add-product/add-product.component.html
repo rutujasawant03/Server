@@ -1,0 +1,54 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm" >
+      <mat-form-field appearance="fill">
+        <mat-label>Category</mat-label>
+       
+        <mat-select [(ngModel)]="selectedValue" name="no">
+          <mat-option *ngFor="let no of category" [value]="no.value">
+            {{no.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Product Name</mat-label>
+            <input formControlName="productName"matInput>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Description</mat-label>
+            <input formControlName="description" matInput>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Quantity </mat-label>
+            <input formControlName="quantity" matInput type="quantity" >
+            <span matSuffix>kg</span>
+          </mat-form-field>
+          <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Amount</mat-label>
+            <input formControlName="price" matInput type="price" class="example-right-align" placeholder="0">
+            <!-- <span matPrefix>&nbsp;</span> -->
+            <span matSuffix>.00</span>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Sold Quantity </mat-label>
+            <input formControlName="Squantity" matInput type="quantity" >
+            <span matSuffix>kg</span>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Total Quantity </mat-label>
+            <input formControlName="Tquantity" matInput type="quantity" >
+            <span matSuffix>kg</span>
+          </mat-form-field>
+          
+          <mat-form-field class="angularformcss no-line " floatLabel="always">
+          <input formControlName="image" matInput placeholder="Image" id="issueType">
+        </mat-form-field>
+      
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+<button mat-raised-button color="warn" mat-dialog-close>Close</button>
+<button style="margin-left: 8px;" mat-raised-button color="primary"  [disabled]="!productForm.value" (click)="addProduct()">{{actionBtn}}</button>
+<!-- <button style="margin-left: 8px;" mat-raised-button color="primary" id="qrcode" (click)="scan()">{{actionBtn}}</button> -->
+</div>
+

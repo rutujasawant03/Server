@@ -1,0 +1,25 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  .container{
+    max-width: 120px;
+    margin: 0 auto;
+  }
+  .logo img{
+    width: 120px;
+    margin: -4px 0 0 -18px
+  }
+.button:hover{
+  color: rgb(28, 218, 59);
+}
+
+
+

@@ -1,0 +1,77 @@
+
+
+.card {
+    border: 1px solid gray;
+    width: 354px;
+    padding: 45px;
+    position: absolute;
+   
+    align-items: center;
+    justify-content: center;
+   
+    left: 10;
+   
+    left: 450px;
+    top: 200px;
+}
+.card h1{
+    text-align: center;
+}
+.btn:hover{
+    background:#2c2c54;
+  }
+.btn{
+    display: inline-block;
+  
+    background:rgb(11, 177, 39);
+    color:#fff;
+    padding: 0.2rem 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 30%;
+  }
+*::selection{
+    background:rgb(28, 218, 59);
+    color:rgb(254, 254, 254);
+  }
+.input-field{
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #4343ff;
+    margin: 16px 15px 0px 15px;
+}
+
+input[type='text'],
+input[type='password']{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+}
+input[type='email']{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+}
+.fa-eye-slash{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+@media  screen and(max-width:600px){
+    card{
+        padding: 70px 35px;
+        padding: 45px;
+        border: 1px solid gray;
+        margin-top: 200px;
+    }
+}
