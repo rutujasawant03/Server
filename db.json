@@ -1,59 +1,6 @@
 {
   "productList": [
     {
-      "id": 7,
-      "category": "Vegetable",
-      "productName": "Small potato",
-      "description": "small",
-      "quantity": "10",
-      "price": 30,
-      "image": "assets/product-5.png",
-      "discount": 10,
-      "Squantity": "",
-      "Tquantity": ""
-    },
-    {
-      "id": 9,
-      "category": "Rice",
-      "productName": "Kolam Rice",
-      "description": "Kolam",
-      "quantity": "10",
-      "price": 50,
-      "image": "https://www.bigbasket.com/media/uploads/p/s/10000415_14-bb-royal-rice-raw-sona-masoori.jpg",
-      "discount": 10
-    },
-    {
-      "id": 10,
-      "category": "Dal",
-      "productName": "Tur Dal",
-      "description": "Tur Dal",
-      "quantity": "10",
-      "price": 90,
-      "image": "https://www.bigbasket.com/media/uploads/p/l/40072494_12-bb-royal-organic-turtoor-dal.jpg",
-      "discount": 10,
-      "Tquantity": ""
-    },
-    {
-      "id": 11,
-      "category": "Dal",
-      "productName": "Moong Dal",
-      "description": "Moong Dal",
-      "quantity": "10",
-      "price": 120,
-      "image": "https://www.bigbasket.com/media/uploads/p/l/30002287_6-tata-sampann-unpolished-moong-dal.jpg",
-      "discount": 10
-    },
-    {
-      "id": 12,
-      "category": "Fruit",
-      "productName": "Coconut",
-      "description": "Dry coconut",
-      "quantity": "10",
-      "price": 140,
-      "image": "https://www.bigbasket.com/media/uploads/p/l/40152633_1-fresho-dry-copracoconut.jpg",
-      "discount": 10
-    },
-    {
       "id": 13,
       "category": "Foodgrains",
       "productName": "Sugar",
@@ -70,10 +17,10 @@
       "productName": "Bread",
       "description": "Sandwich bread",
       "quantity": "10",
-      "price": 35,
+      "price": 350,
       "image": "https://5.imimg.com/data5/KN/KW/MY-72578800/white-sandwich-bread-1000x1000.png",
       "discount": 10,
-      "Qr": ""
+      "Tquantity": ""
     },
     {
       "id": 15,
@@ -264,6 +211,15 @@
       "mobile": "1478523698",
       "security": "mnbvcxzasdf",
       "id": 4
+    },
+    {
+      "fullname": "Shital",
+      "email": "shital@gmail.com",
+      "password": "123456789",
+      "confirmpassword": "123456789",
+      "mobile": "1478523698",
+      "security": "ShefaliSchool",
+      "id": 6
     }
   ],
   "cart": [
@@ -695,6 +651,97 @@
       "total": 45,
       "discount": 10,
       "id": 137
+    },
+    {
+      "userID": 3,
+      "productid": 14,
+      "category": "Snacks",
+      "description": "Sandwich bread",
+      "image": "https://5.imimg.com/data5/KN/KW/MY-72578800/white-sandwich-bread-1000x1000.png",
+      "price": 350,
+      "productName": "Bread",
+      "quantity": 1,
+      "total": 350,
+      "discount": 10,
+      "id": 159
+    },
+    {
+      "userID": 3,
+      "productid": 15,
+      "category": "Snacks",
+      "description": "Whole wheat pasta",
+      "image": "https://www.pngkey.com/png/full/935-9351689_penne-pasta-penne.png",
+      "price": 45,
+      "productName": "Pasta",
+      "quantity": 1,
+      "total": 45,
+      "discount": 10,
+      "id": 160
+    },
+    {
+      "userID": 3,
+      "productid": 17,
+      "category": "Foodgrains",
+      "description": "small",
+      "image": "https://tiimg.tistatic.com/fp/1/005/229/100-pure-sooji-samrat--648-w300.jpg",
+      "price": 40,
+      "productName": "Sooji",
+      "quantity": 1,
+      "total": 40,
+      "discount": 10,
+      "id": 161
+    },
+    {
+      "userID": 3,
+      "productid": 18,
+      "category": "Foodgrains",
+      "description": "Maida",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/NH/MV/VT/131809896/mayur-maida-500x500.png",
+      "price": 20,
+      "productName": "Maida",
+      "quantity": 1,
+      "total": 20,
+      "discount": 10,
+      "id": 162
+    },
+    {
+      "userID": 6,
+      "productid": 18,
+      "category": "Foodgrains",
+      "description": "Maida",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/NH/MV/VT/131809896/mayur-maida-500x500.png",
+      "price": 20,
+      "productName": "Maida",
+      "quantity": 1,
+      "total": 20,
+      "discount": 10,
+      "id": 163
+    },
+    {
+      "userID": 6,
+      "productid": 17,
+      "category": "Foodgrains",
+      "description": "small",
+      "image": "https://tiimg.tistatic.com/fp/1/005/229/100-pure-sooji-samrat--648-w300.jpg",
+      "price": 40,
+      "productName": "Sooji",
+      "quantity": 1,
+      "total": 40,
+      "discount": 10,
+      "id": 165
+    },
+    {
+      "userID": 6,
+      "productid": 28,
+      "category": "Flour",
+      "description": "flour",
+      "image": "https://images.smuckers.ca/images/products/16/product_473.png",
+      "price": 50,
+      "productName": "Durum flour",
+      "quantity": 1,
+      "total": 50,
+      "discount": 10,
+      "id": 166
     }
   ],
   "admin": [
@@ -894,6 +941,32 @@
         "productName": "Kolam Rice",
         "quantity": 1,
         "total": 50,
+        "discount": 10
+      }
+    ],
+    [
+      {
+        "userID": 6,
+        "productid": 9,
+        "category": "Rice",
+        "description": "Kolam",
+        "image": "https://www.bigbasket.com/media/uploads/p/s/10000415_14-bb-royal-rice-raw-sona-masoori.jpg",
+        "price": 50,
+        "productName": "Kolam Rice",
+        "quantity": 1,
+        "total": 50,
+        "discount": 10
+      },
+      {
+        "userID": 6,
+        "productid": 16,
+        "category": "Beverages           ",
+        "description": "Masala  Tea ",
+        "image": "https://5.imimg.com/data5/MA/UF/BO/GLADMIN-10630909/selection-285-500x500.png",
+        "price": 90,
+        "productName": "Tea Powder",
+        "quantity": 1,
+        "total": 90,
         "discount": 10
       }
     ]

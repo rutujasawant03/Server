@@ -1,7 +1,8 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
+import { Observable, of } from 'rxjs';
 import { FormComponent } from '../form/form.component';
 import { ApiService } from '../services/api.service';
 interface Category {
@@ -15,11 +16,13 @@ interface Category {
   styleUrls: ['./add-product.component.css']
 })
 export class AddProductComponent implements OnInit {
+  
   productForm !: FormGroup;
   actionBtn : string ="Save"
   public product :any =[];
   selectedValue!: string;
   Squantity:any;
+  submitted ! : true ;
   item:any;
   category: Category[] = [
     {value: 'Rice', viewValue: 'Rice'},
@@ -42,15 +45,15 @@ export class AddProductComponent implements OnInit {
     this.productForm = this.formBuilder.group({
       
       id:'',
-      category: ['',Validators.required],
-      productName : ['',Validators.required],
-      description : ['',Validators.required],
-      quantity : ['',Validators.required],
-      price : ['',Validators.required,Validators.max(1)],
-      image : [''],
+      category: ['',([Validators.required,Validators.min(8)])],
+      productName : ['',([Validators.required,Validators.min(8)])],
+      description :['',([Validators.required,Validators.min(8)])],
+      quantity : ['',([Validators.required,Validators.min(8)])],
+      price : ['',([Validators.required,Validators.min(8)])],
+      image :'',
       discount:10,
       Squantity:'',
-      Tquantity:''
+      Tquantity:'',
       
     });
     if(this.editData){
@@ -71,8 +74,15 @@ export class AddProductComponent implements OnInit {
     
   // }
   addProduct(){
+   
    if(!this.editData){
     if(this.productForm){
+      this.submitted = true
+    
+      if(this.productForm.invalid){
+        alert("Something went wrong")
+      }
+      else{
       this.api.postProduct(this.productForm.value)
       .subscribe({
         next:(res)=>{
@@ -84,6 +94,7 @@ export class AddProductComponent implements OnInit {
           alert("error while adding product")
         }
       })
+    }
     }
   }
    else{

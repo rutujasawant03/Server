@@ -4,7 +4,7 @@
       <mat-form-field appearance="fill">
         <mat-label>Category</mat-label>
        
-        <mat-select [(ngModel)]="selectedValue" name="no">
+        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" name="no">
           <mat-option *ngFor="let no of category" [value]="no.value">
             {{no.viewValue}}
           </mat-option>
@@ -16,33 +16,41 @@
           </mat-form-field>
           <mat-form-field appearance="fill">
             <mat-label>Description</mat-label>
-            <input formControlName="description" matInput>
+            <input formControlName="description" matInput >
+            
           </mat-form-field>
+          
           <mat-form-field appearance="fill">
             <mat-label>Quantity </mat-label>
-            <input formControlName="quantity" matInput type="quantity" >
+            <input formControlName="quantity" matInput type="number" >
             <span matSuffix>kg</span>
           </mat-form-field>
           <mat-form-field appearance="fill" floatLabel="always">
             <mat-label>Amount</mat-label>
-            <input formControlName="price" matInput type="price" class="example-right-align" placeholder="0">
+            <input formControlName="price" matInput type="number" class="example-right-align" placeholder="0">
             <!-- <span matPrefix>&nbsp;</span> -->
             <span matSuffix>.00</span>
           </mat-form-field>
           <mat-form-field appearance="fill">
             <mat-label>Sold Quantity </mat-label>
-            <input formControlName="Squantity" matInput type="quantity" >
+            <input formControlName="Squantity" matInput type="number" >
             <span matSuffix>kg</span>
           </mat-form-field>
           <mat-form-field appearance="fill">
             <mat-label>Total Quantity </mat-label>
-            <input formControlName="Tquantity" matInput type="quantity" >
+            <input formControlName="Tquantity" matInput type="number" >
             <span matSuffix>kg</span>
           </mat-form-field>
-          
-          <mat-form-field class="angularformcss no-line " floatLabel="always">
+
+          <mat-form-field appearance="fill">
+            <mat-label>img</mat-label>
+            <input formControlName="image" matInput type="url" >
+            
+          </mat-form-field>
+          <!-- <mat-form-field class="angularformcss no-line " floatLabel="always">
           <input formControlName="image" matInput placeholder="Image" id="issueType">
-        </mat-form-field>
+        </mat-form-field> -->
+        
       
     </form>
 </div>
