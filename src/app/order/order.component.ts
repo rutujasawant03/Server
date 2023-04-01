@@ -20,7 +20,7 @@ export class OrderComponent implements OnInit {
   constructor(private api : ApiService) { }
 
   ngOnInit(): void {
-    this.getAllProduct(this.userID);
+    this.getAllProduct();
     
   }
   applyFilter(event: Event) {
@@ -31,34 +31,31 @@ export class OrderComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-  getAllProduct(userID:number){
-    this.api.getOrder(userID)
-    
-    .subscribe({
-      next:(res)=>{
-        console.log(userID,'bhsbxhjsvjxsvxhvsXHVHJXVJV')
+  getAllProduct(){
+    this.api.getOrders().subscribe((res)=>{
+        // console.log(userID,'bhsbxhjsvjxsvxhvsXHVHJXVJV')
         console.log(res,'ggjjvjh')
         
         this.dataSource = new MatTableDataSource(res);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-      },
-      error:(err)=>{
+      },error=>{
         alert("Error while fetching the records")
-      }
-    })
+      })
+      
+    
   }
   deleteOrder(id:number){
     this.api.deleteOrder(id)
     .subscribe({
       next:(res)=>{
         alert("order deleted sucessfully")
-        this.getAllProduct(this.userID);
+        this.getAllProduct();
       },
       error:()=>{
         alert("error while deleting product!")
       }
     })
-    this.getAllProduct(this.userID)
+    this.getAllProduct()
   }
 }

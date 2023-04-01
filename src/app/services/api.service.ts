@@ -35,13 +35,14 @@ export class ApiService {
   getOrder(userId:any){
     return this.http.get<any>("http://localhost:3000/order?userID="+userId);
   }
-  // getOrders(){
-  //   return this.http.get<any>("http://localhost:3000/order/");
-  // }
+  getOrders(){
+    return this.http.get<any>("http://localhost:3000/order/");
+  }
   putOrder(item:any){
     return this.http.put<any>("http://localhost:3000/order/",item);
   }
   deleteOrder(id:number){
     return this.http.delete<any>("http://localhost:3000/order/"+id);
   }
+  
 }

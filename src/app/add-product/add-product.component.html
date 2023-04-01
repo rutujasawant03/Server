@@ -3,12 +3,7 @@
     <form [formGroup]="productForm" >
       <mat-form-field appearance="fill">
         <mat-label>Category</mat-label>
-       
-        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" name="no">
-          <mat-option *ngFor="let no of category" [value]="no.value">
-            {{no.viewValue}}
-          </mat-option>
-        </mat-select>
+        <input formControlName="category"matInput>
       </mat-form-field>
         <mat-form-field appearance="fill">
             <mat-label>Product Name</mat-label>

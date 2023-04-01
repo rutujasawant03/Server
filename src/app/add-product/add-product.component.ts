@@ -45,11 +45,11 @@ export class AddProductComponent implements OnInit {
     this.productForm = this.formBuilder.group({
       
       id:'',
-      category: ['',([Validators.required,Validators.min(8)])],
-      productName : ['',([Validators.required,Validators.min(8)])],
-      description :['',([Validators.required,Validators.min(8)])],
-      quantity : ['',([Validators.required,Validators.min(8)])],
-      price : ['',([Validators.required,Validators.min(8)])],
+      category: ['',[Validators.required]],
+      productName : ['',[Validators.required]],
+      description :['',[Validators.required]],
+      quantity : ['',[Validators.required]],
+      price : ['',[Validators.required]],
       image :'',
       discount:10,
       Squantity:'',
@@ -79,10 +79,8 @@ export class AddProductComponent implements OnInit {
     if(this.productForm){
       this.submitted = true
     
-      if(this.productForm.invalid){
-        alert("Something went wrong")
-      }
-      else{
+     
+     
       this.api.postProduct(this.productForm.value)
       .subscribe({
         next:(res)=>{
@@ -96,7 +94,7 @@ export class AddProductComponent implements OnInit {
       })
     }
     }
-  }
+ 
    else{
        this.updateProduct()
      }
