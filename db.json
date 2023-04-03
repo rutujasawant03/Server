@@ -1,196 +1,28 @@
 {
   "productList": [
     {
-      "id": 13,
-      "category": "Foodgrains",
-      "productName": "Sugar",
-      "description": "small sugar",
-      "quantity": "10",
-      "price": 40,
-      "image": "https://www.bigbasket.com/media/uploads/p/l/40253564_1-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg",
-      "discount": 10,
-      "Qr": ""
-    },
-    {
-      "id": 14,
-      "category": "Bakery",
-      "productName": "Bread",
-      "description": "Sandwich bread",
-      "quantity": "10",
-      "price": 350,
-      "image": "https://5.imimg.com/data5/KN/KW/MY-72578800/white-sandwich-bread-1000x1000.png",
-      "discount": 10,
-      "Tquantity": ""
-    },
-    {
-      "id": 15,
-      "category": "Snacks",
-      "productName": "Pasta",
-      "description": "Whole wheat pasta",
-      "quantity": "10",
-      "price": 45,
-      "image": "https://www.pngkey.com/png/full/935-9351689_penne-pasta-penne.png",
-      "discount": 10,
-      "Qr": ""
-    },
-    {
-      "id": 16,
-      "category": "Beverages           ",
-      "productName": "Tea Powder",
-      "description": "Masala  Tea ",
-      "quantity": "10",
-      "price": 90,
-      "image": "https://5.imimg.com/data5/MA/UF/BO/GLADMIN-10630909/selection-285-500x500.png",
-      "discount": 10,
-      "Qr": ""
-    },
-    {
-      "id": 17,
-      "category": "Foodgrains",
-      "productName": "Sooji",
-      "description": "small",
-      "quantity": "10",
-      "price": 40,
-      "image": "https://tiimg.tistatic.com/fp/1/005/229/100-pure-sooji-samrat--648-w300.jpg",
-      "discount": 10
-    },
-    {
-      "id": 18,
-      "category": "Foodgrains",
-      "productName": "Maida",
-      "description": "Maida",
-      "quantity": "10",
-      "price": 20,
-      "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/NH/MV/VT/131809896/mayur-maida-500x500.png",
-      "discount": 10,
-      "Qr": ""
-    },
-    {
-      "id": 19,
-      "category": "Foodgrains",
-      "productName": "Besan",
-      "description": "besan",
-      "quantity": "10",
-      "price": 40,
-      "image": "https://m.media-amazon.com/images/I/613DXDVki9L._SL1500_.jpg",
-      "discount": 10,
-      "Qr": ""
-    },
-    {
-      "id": 20,
-      "category": "Foodgrains",
-      "productName": "Atta",
-      "description": "Aashirvaad Atta",
-      "quantity": "10",
-      "price": 195,
-      "image": "https://5.imimg.com/data5/XO/CR/MY-19432744/aashirvaad-whole-wheat-atta-1kg-500x500.png",
-      "discount": 10
-    },
-    {
-      "id": 21,
-      "category": "Foodgrains",
-      "productName": "Poha",
-      "description": "Thick poha",
-      "quantity": "10",
-      "price": 50,
-      "image": "https://www.bigbasket.com/media/uploads/p/s/40178083_5-tata-sampann-thick-poha.jpg",
-      "discount": 10,
-      "Qr": ""
-    },
-    {
-      "id": 22,
+      "id": 1,
       "category": "Rice",
-      "productName": "Basmati Rice",
-      "description": "Dawat",
-      "quantity": "10",
-      "price": 87,
-      "image": "https://www.bigbasket.com/media/uploads/p/s/255849_5-daawat-basmati-rice-rozana-gold.jpg",
-      "discount": 10,
-      "Qr": ""
+      "productName": "Dawat",
+      "description": "packed",
+      "quantity": 10,
+      "price": 120,
+      "SQty": 2,
+      "RemQty": 3,
+      "image": "https://www.bigbasket.com/media/uploads/p/l/247282_8-daawat-basmati-rice-traditional.jpg",
+      "discount": 10
     },
     {
-      "id": 23,
+      "id": 2,
       "category": "Dal",
-      "productName": "Urad Dal",
-      "description": "Uddina Bele - Split",
-      "quantity": "10",
-      "price": 145,
-      "image": "https://www.bigbasket.com/media/uploads/p/s/30010377_11-bb-popular-urad-dal-split.jpg",
-      "discount": 10
-    },
-    {
-      "id": 24,
-      "category": "Dal",
-      "productName": "Masoor Dal",
-      "description": "BB Popular Masoor Dal",
-      "quantity": "10",
-      "price": 135,
-      "image": "https://www.bigbasket.com/media/uploads/p/l/30010365_11-bb-popular-masoor-dal.jpg",
-      "discount": 10
-    },
-    {
-      "id": 25,
-      "category": "Snacks",
-      "productName": "Chips",
-      "description": "onion",
-      "quantity": "10",
-      "price": 46,
-      "image": "https://img.freepik.com/free-photo/prepared-unhealthy-pile-delicious-food_1339-25.jpg",
-      "discount": 10
-    },
-    {
-      "id": 26,
-      "category": "Flour",
-      "productName": "Cake Flour",
-      "description": "Flour",
-      "quantity": "10",
-      "price": 30,
-      "image": "https://www.bigbasket.com/media/uploads/p/l/40172936_4-serapheena-keto-cake-mix-vanilla-victoria-almond-flour-no-sugar.jpg",
-      "discount": 10
-    },
-    {
-      "id": 28,
-      "category": "Flour",
-      "productName": "Durum flour",
-      "description": "flour",
-      "quantity": "10",
-      "price": 50,
-      "image": "https://images.smuckers.ca/images/products/16/product_473.png",
-      "discount": 10
-    },
-    {
-      "id": 29,
-      "category": "Facewash",
-      "productName": "Himalaya Facewash",
-      "description": "Facewash",
-      "quantity": "10",
-      "price": 85,
-      "image": "https://www.bigbasket.com/media/uploads/p/l/100134697_2-himalaya-purifying-neem-face-wash.jpg",
-      "discount": 10
-    },
-    {
-      "id": 30,
-      "category": "Butter",
-      "productName": "Butter",
-      "description": "butter",
-      "quantity": "10",
-      "price": 58,
-      "image": "https://www.bigbasket.com/media/uploads/p/l/40045943_1-amul-butter-pasteurised.jpg",
+      "productName": "Tur dal",
+      "description": "polished",
+      "quantity": 10,
+      "price": 120,
+      "image": "https://www.bigbasket.com/media/uploads/p/l/40004556_7-safe-harvest-tur-dal-pesticide-free.jpg",
       "discount": 10,
-      "Squantity": "",
-      "Tquantity": ""
-    },
-    {
-      "id": 31,
-      "category": "Rice",
-      "productName": "Basmati",
-      "description": "small",
-      "quantity": "10",
-      "price": 90,
-      "image": "assets/product-5.png",
-      "discount": 10,
-      "Squantity": "",
-      "Tquantity": ""
+      "SQty": "10",
+      "RemQty": ""
     }
   ],
   "signupUsers": [
@@ -276,21 +108,7 @@
       "id": 12
     }
   ],
-  "cart": [
-    {
-      "userID": 6,
-      "productid": 14,
-      "category": "Snacks",
-      "description": "Sandwich bread",
-      "image": "https://5.imimg.com/data5/KN/KW/MY-72578800/white-sandwich-bread-1000x1000.png",
-      "price": 350,
-      "productName": "Bread",
-      "quantity": 1,
-      "total": 350,
-      "discount": 10,
-      "id": 2
-    }
-  ],
+  "cart": [],
   "admin": [
     {
       "id": "admin",
@@ -304,34 +122,32 @@
     }
   ],
   "order": [
-    [
-      {
-        "userID": 6,
-        "productid": 15,
-        "category": "Snacks",
-        "description": "Whole wheat pasta",
-        "image": "https://www.pngkey.com/png/full/935-9351689_penne-pasta-penne.png",
-        "price": 45,
-        "productName": "Pasta",
-        "quantity": 1,
-        "total": 45,
-        "discount": 10,
-        "id": 1
-      },
-      {
-        "userID": 6,
-        "productid": 14,
-        "category": "Snacks",
-        "description": "Sandwich bread",
-        "image": "https://5.imimg.com/data5/KN/KW/MY-72578800/white-sandwich-bread-1000x1000.png",
-        "price": 350,
-        "productName": "Bread",
-        "quantity": 1,
-        "total": 350,
-        "discount": 10,
-        "id": 2
-      }
-    ]
+    {
+      "userID": 3,
+      "productid": 1,
+      "category": "Rice",
+      "description": "packed",
+      "image": "https://www.bigbasket.com/media/uploads/p/l/247282_8-daawat-basmati-rice-traditional.jpg",
+      "price": 120,
+      "productName": "Dawat",
+      "quantity": 5,
+      "total": 120,
+      "discount": 10,
+      "id": 1
+    },
+    {
+      "userID": 3,
+      "productid": 1,
+      "category": "Rice",
+      "description": "packed",
+      "image": "https://www.bigbasket.com/media/uploads/p/l/247282_8-daawat-basmati-rice-traditional.jpg",
+      "price": 120,
+      "productName": "Dawat",
+      "quantity": 3,
+      "total": 120,
+      "discount": 10,
+      "id": 2
+    }
   ],
   "wishlist": [],
   "profile": {

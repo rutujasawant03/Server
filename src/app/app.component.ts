@@ -6,7 +6,7 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { HttpClient } from '@angular/common/http';
-import { CustomerComponent } from './customer/customer.component';
+import { CustomerComponent } from './add-product/customer/customer.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';

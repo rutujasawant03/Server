@@ -1,9 +1,14 @@
-<h1 mat-dialog-title>Add Product Form</h1>
+<h1 mat-dialog-title> Product Form</h1>
 <div mat-dialog-content>
     <form [formGroup]="productForm" >
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="fill"  >
         <mat-label>Category</mat-label>
-        <input formControlName="category"matInput>
+        <mat-select  formControlName="category">
+          <mat-option value="Dal">Dal</mat-option>
+          <mat-option value="Rice">Rice</mat-option>
+          <mat-option value="Flour">Flour</mat-option>
+          <mat-option value="Snacks">Snacks</mat-option>
+        </mat-select>
       </mat-form-field>
         <mat-form-field appearance="fill">
             <mat-label>Product Name</mat-label>
@@ -24,16 +29,16 @@
             <mat-label>Amount</mat-label>
             <input formControlName="price" matInput type="number" class="example-right-align" placeholder="0">
             <!-- <span matPrefix>&nbsp;</span> -->
-            <span matSuffix>.00</span>
+           
           </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Sold Quantity </mat-label>
-            <input formControlName="Squantity" matInput type="number" >
+          <!-- <mat-form-field appearance="fill">
+            <mat-label >Sold Quantity </mat-label>
+            <input formControlName="RemQty" matInput>
             <span matSuffix>kg</span>
-          </mat-form-field>
+          </mat-form-field> -->
           <mat-form-field appearance="fill">
             <mat-label>Total Quantity </mat-label>
-            <input formControlName="Tquantity" matInput type="number" >
+            <input formControlName="SQty" matInput>
             <span matSuffix>kg</span>
           </mat-form-field>
 

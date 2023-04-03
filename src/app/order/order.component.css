@@ -14,4 +14,13 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background:rgb(11, 177, 39);
+    color:#fff;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+  }

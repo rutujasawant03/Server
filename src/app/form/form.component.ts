@@ -19,11 +19,12 @@ import { AddProductComponent } from '../add-product/add-product.component';
 })
 export class FormComponent implements OnInit {
   productForm !: FormGroup;
+PID:any;
   // actionBtn : string ="Save"
   public product :any =[];
-  displayedColumns: string[] = [ 'category','productName','image','description','quantity','price','Squantity','action','Qr'];
+  displayedColumns: string[] = [ 'category','productName','image','description','quantity','price','SQty','action','Qr'];
   dataSource !: MatTableDataSource<any>;
-
+  total:any;
   @ViewChild(MatPaginator) paginator !: MatPaginator;
   @ViewChild(MatSort) sort !: MatSort;
   constructor(private formBuilder:FormBuilder, private api : ApiService,private dialog : MatDialog,) { }
@@ -99,19 +100,32 @@ export class FormComponent implements OnInit {
   //   })
   // }
   getAllProduct(){
-    this.api.getProduct()
-    
-    .subscribe({
-      next:(res)=>{
-        
-        this.dataSource = new MatTableDataSource(res);
-        this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
-      },
-      error:(err)=>{
-        alert("Error while fetching the records")
+    this.api.getProduct().subscribe((res)=>{
+      for(let i=0;i<res.length;i++){
+      this.PID=res[i].id;
+      let totqyt=res.SQty;
+      let Pro=res[i].productName
+      let QT=res[i].SQty
+      console.log(QT,'MMMMM')
+      if(QT===2){
+        alert("Refill the Stock of "+Pro)
       }
-    })
+      this.dataSource = new MatTableDataSource(res);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
+    }
+    },
+    )
+    error:(err: any)=>{
+      alert("Error while fetching the records")
+    }
+  
+    
+  
+
+    
+      
+       
   }
   editProduct(row  : any){
     this.dialog.open(AddProductComponent,{

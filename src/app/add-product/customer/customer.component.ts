@@ -6,8 +6,8 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
-import { FormComponent } from '../form/form.component';
-import { ApiService } from '../services/api.service';
+import { FormComponent } from '../../form/form.component';
+import { ApiService } from '../../services/api.service';
 
 import { passwordMatch } from './validator';
 

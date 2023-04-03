@@ -44,5 +44,13 @@ export class ApiService {
   deleteOrder(id:number){
     return this.http.delete<any>("http://localhost:3000/order/"+id);
   }
-  
+  getOrderId(proid:any){
+    return this.http.get<any>("http://localhost:3000/order?productid="+proid);
+  }
+  getProductId(id:number){
+    return this.http.get<any>("http://localhost:3000/productList?id="+id);
+  }
+  putProductqty(id: any,data:any){
+    return this.http.put<any>("http://localhost:3000/productList/"+id ,data);
+  }
 }

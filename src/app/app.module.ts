@@ -17,7 +17,7 @@ import {  HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
-import { CustomerComponent } from './customer/customer.component';
+import { CustomerComponent } from './add-product/customer/customer.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { LoginComponent } from './login/login.component';
 import { OrderComponent } from './order/order.component';
