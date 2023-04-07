@@ -4,10 +4,10 @@
  
   <span><a  class="logo"><img src="assets/logog.png"> </a></span>
   <span class="example-spacer"></span>
-  <button  mat-button  *ngIf="loggedin()" (click)="openDialog()" routerLink="form" style="margin-right: 1rem;">Add Product</button>
-  <button  mat-button    *ngIf="loggedin()" routerLink="customer" style="margin-right: 1rem;">User</button>
-  <button  mat-button    *ngIf="loggedin()" routerLink="order" style="margin-right: 1rem;">Orders</button>
-  <button  mat-button *ngIf="loggedin()" (click)="logout()" style="margin-right: 1rem;">Logout</button>
+  <button  mat-button class="btn" *ngIf="loggedin()" (click)="openDialog()" routerLink="form" style="margin-right: 1rem;">Add Product</button>
+  <button  mat-button class="btn"   *ngIf="loggedin()" routerLink="customer" style="margin-right: 1rem;">User</button>
+  <button  mat-button class="btn"   *ngIf="loggedin()" routerLink="order" style="margin-right: 1rem;">Orders</button>
+  <button  mat-button class="btn" *ngIf="loggedin()" (click)="logout()" style="margin-right: 1rem;">Logout</button>
 </mat-toolbar>
 
 

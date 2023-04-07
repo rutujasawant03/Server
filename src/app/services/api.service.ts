@@ -53,4 +53,5 @@ export class ApiService {
   putProductqty(id: any,data:any){
     return this.http.put<any>("http://localhost:3000/productList/"+id ,data);
   }
+ 
 }
